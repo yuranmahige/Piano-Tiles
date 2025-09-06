@@ -245,7 +245,7 @@ html{ background-image: linear-gradient(to right,var(--corS), var(--corP));
     background-color: var(--foot);
 }
 .btn_foot{
-   width: 25dvw;
+   width: 25vw;
    height: 40px;
 }
 .btn_foot:hover{  background-color: #cf044bcf;
