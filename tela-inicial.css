@@ -115,7 +115,7 @@ html{ background-image: linear-gradient(to right,var(--corS), var(--corP));
     width: 100%;
 }
 .categorias{
-    width: 25dvw;
+    width: 25vw;
     height: 2em;
     line-height: 2em;
     text-align: center;
