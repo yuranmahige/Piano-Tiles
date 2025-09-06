@@ -1,0 +1,261 @@
+@charset "UTF";
+
+/* Media queries para tablets */
+
+@media(min-width: 577px){
+#ajuste{ width: 144px;
+}
+}
+
+/* fim media querie */
+/* Variaveis */
+:root{
+    --font: .55rem;
+    --corP:#A56DF2; 
+    --corS: #8D92F2;
+    --corT:#7ea5f2b4;
+    --corF:#6BBEF2;
+    --jogar: blueviolet;
+    --music:#01012587;
+    --foot: #81012ecf;
+}
+
+/* Configuracoes gerais*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform: capitalize;
+}
+html{ background-image: linear-gradient(to right,var(--corS), var(--corP));
+}
+.corpo_tela-principal{
+    position: relative;
+    max-width: 576px;
+    min-width: 320px;
+    margin: auto;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Para links */
+.link{
+    color: white;
+    cursor: pointer;
+}
+    
+/* Para botoes */
+.btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.br{ border-right: 1px solid #ffffff68;
+}
+    
+/* fim */
+
+/* Cabecalho */
+.header{ background-color: #892be29f;
+}
+
+/* Primeira parte do cabecalho */
+.top_i{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding:5px;
+    margin-left: 10px;
+}
+.box-saldo{
+    position: relative;
+    min-width: 60px;
+    height: 16px;
+    margin-right: 20px;
+    background-color: #00000021;
+}
+.box-star{ min-width: 40px;
+}
+.settings{
+    position: absolute;
+    right: 7px;
+}
+.icon{
+    width: 15px;
+    margin-left: -8px;
+}
+.valor{
+    font-size: .8rem;
+    color: white;
+}
+
+/* botao addicionar */
+.btn_add{
+    background-color:#00000046 ;
+    height: 100%;
+    padding: 1px;
+    margin-left: 4px;
+    float: right;
+}
+.row{
+    display: block;
+    margin: auto;
+    width: 10px;
+    height: 1px;
+    background-color: #ffffffe4;
+}
+.row_i{ transform: translateY(1px) rotate(90deg);
+}
+
+/* Segunda parte do cabecalho */
+.top_ii{
+    display: flex;
+    background-color: var(--corF);
+    width: 100%;
+}
+.categorias{
+    width: 25dvw;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+}
+.categorias:hover{ background-color: #00000050;
+}
+.categorias:active{ background-color: #00000050;
+}
+.estilo-musical{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #ffffffec;
+}
+
+/* Terceira parte do cabecalho */
+.top_iii{
+    display: flex;
+    align-items: center;
+    padding: 13px 0;
+    width: 100%;
+    height: 23px;
+    background-image: linear-gradient(to right,#ffffffef, var(--corP));
+}
+.tiii_icon{
+    width: 23px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.Vstar_iii-content{
+    color: #fffffff3;
+    font-weight: bold;
+}
+/* Fim cabecalho */
+
+
+/* conteudo principal */
+
+.main{
+    overflow-y: scroll;
+    max-width: 95%;
+    margin: 10px auto 0;
+}
+
+.main::-webkit-scrollbar{ width: 0;
+}
+/* content */
+
+.musica_content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 1px;
+    background-color: var(--music);
+}
+.thumb{ background-color: black;
+}
+.btn_play{
+    position: absolute;
+    width: 30px;
+    left: 16px;
+    bottom: 12px;
+    background-color: #00000099;
+    border-radius: 50%;
+}
+.img_play{
+    width: 100%;
+    height: 100%;
+}
+.ms-img{
+    width: 100%;
+    height: 100%;
+}
+
+/* informacoes da musica */
+.musica_info{ padding: 8px;
+}
+.titulo{
+    font-size: var(--font);
+    color: #ffffffd7;
+}
+.hit{
+    font-size: var(--font);
+    color: #ffffff8f;
+}
+
+.interativo{
+    display: flex;
+    align-items: center;
+}
+.classificacao_musica{ width: 13px;
+}
+.btn_fav{
+    position: relative;
+    top: 3px;
+    width: 17px;
+    margin-left: 7px;
+}
+.fav_ico{ width: 100%;
+}
+.btn_jogar{
+    position: absolute;
+    right: 18px;
+    width: 50px;
+    height: 20px;
+    font-size: var(--font);
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border: 1px solid var(--jogar);
+    border-radius: 3px;
+    background-color: var(--jogar);
+}
+
+/* Fim conteudo principal */
+
+/* Rodape */
+.footer{
+    position: fixed;
+    display: flex;
+    bottom: 0px;
+    align-items: center;
+    height: 40px;
+    width: 576px;
+    margin-top: 20px;
+    background-color: var(--foot);
+}
+.btn_foot{
+   width: 25dvw;
+   height: 40px;
+}
+.btn_foot:hover{  background-color: #cf044bcf;
+}
+.btn_foot:active{  background-color: #cf044bcf;
+}
+.box-play{
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: -5px;
+}
